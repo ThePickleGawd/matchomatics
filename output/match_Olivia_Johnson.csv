@@ -1,0 +1,26 @@
+Name,Grade,Percent,Category
+William Williams,12,86.67,Same Grade
+William Brown,12,86.67,Same Grade
+William Jones,12,80.0,Same Grade
+Liam Williams,12,73.33,Same Grade
+Olivia Smith,12,73.33,Same Grade
+Oliver Brown,12,73.33,Same Grade
+Olivia Jones,12,73.33,Same Grade
+Oliver Smith,12,73.33,Same Grade
+Oliver Jones,12,73.33,Same Grade
+Oliver Johnson,12,73.33,Same Grade
+James Jones,12,73.33,Same Grade
+William Smith,12,73.33,Same Grade
+Oliver Williams,12,66.67,Same Grade
+Oliver Williams,12,66.67,Same Grade
+William Smith,12,66.67,Same Grade
+William Smith,9,93.33,Different Grade
+Liam Johnson,10,93.33,Different Grade
+James Jones,10,93.33,Different Grade
+William Williams,11,86.67,Different Grade
+Oliver Brown,11,86.67,Different Grade
+Isabella Smith,9,86.67,Different Grade
+Liam Jones,9,86.67,Different Grade
+Olivia Smith,10,80.0,Different Grade
+Oliver Jones,11,80.0,Different Grade
+William Williams,11,80.0,Different Grade

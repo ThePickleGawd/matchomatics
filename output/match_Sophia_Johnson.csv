@@ -1,0 +1,26 @@
+Name,Grade,Percent,Category
+Sophia Brown,11,80.0,Same Grade
+James Johnson,11,80.0,Same Grade
+James Jones,11,80.0,Same Grade
+Liam Johnson,11,80.0,Same Grade
+Noah Jones,11,73.33,Same Grade
+James Smith,11,73.33,Same Grade
+Emma Jones,11,66.67,Same Grade
+William Brown,11,66.67,Same Grade
+Liam Jones,11,66.67,Same Grade
+James Johnson,11,66.67,Same Grade
+William Smith,11,60.0,Same Grade
+Olivia Johnson,11,60.0,Same Grade
+James Williams,11,60.0,Same Grade
+Ava Jones,11,60.0,Same Grade
+Isabella Williams,11,60.0,Same Grade
+Emma Williams,9,93.33,Different Grade
+Isabella Jones,12,86.67,Different Grade
+James Smith,12,86.67,Different Grade
+James Jones,12,86.67,Different Grade
+Liam Williams,10,86.67,Different Grade
+Oliver Williams,9,86.67,Different Grade
+William Smith,9,80.0,Different Grade
+William Smith,12,80.0,Different Grade
+Oliver Johnson,12,80.0,Different Grade
+Liam Williams,10,80.0,Different Grade
