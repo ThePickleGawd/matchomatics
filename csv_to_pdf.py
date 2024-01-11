@@ -11,7 +11,7 @@ def csv_to_html(csv_file, template_file, output_html):
     template = env.get_template(template_file)
 
     # Render the template with data
-    html_out = template.render(matches=data.to_dict("records"), Name="Sophia")
+    html_out = template.render(matches=data.to_dict("records"), Name="Alex")
 
     # Write output to an HTML file
     with open(output_html, "w") as file:
@@ -19,7 +19,7 @@ def csv_to_html(csv_file, template_file, output_html):
 
 
 # Example usage
-csv_file = "output/match_Sophia_Brown.csv"  # Replace with your CSV file path
+csv_file = "output/match_Alex_Davis.csv"  # Replace with your CSV file path
 template_file = "template/template.html"  # Replace with your HTML template file
 output_html = "output.html"  # Output HTML file
 

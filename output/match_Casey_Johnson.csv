@@ -1,0 +1,24 @@
+Name,Grade,Percent,Gender,Category
+Morgan Miller,10,Female,85.0,Same Grade
+Taylor Williams,10,Non-Binary,80.0,Same Grade
+Jordan Brown,10,Female,80.0,Same Grade
+Jordan Davis,10,Male,80.0,Same Grade
+Riley Taylor,10,Female,75.0,Same Grade
+Morgan Moore,10,Male,70.0,Same Grade
+Casey Brown,10,Female,65.0,Same Grade
+Casey Moore,10,Female,65.0,Same Grade
+Jordan Smith,10,Male,65.0,Same Grade
+Quinn Williams,10,Male,65.0,Same Grade
+Alex Davis,9,Non-Binary,80.0,Different Grade
+Casey Smith,12,Non-Binary,80.0,Different Grade
+Avery Smith,9,Female,80.0,Different Grade
+Jamie Jones,12,Female,80.0,Different Grade
+Taylor Taylor,9,Male,75.0,Different Grade
+Alex Davis,9,Non-Binary,80.0,Same Gender
+Taylor Williams,10,Non-Binary,80.0,Same Gender
+Casey Smith,12,Non-Binary,80.0,Same Gender
+Morgan Williams,11,Non-Binary,75.0,Same Gender
+Avery Taylor,12,Non-Binary,75.0,Same Gender
+Dylan,12,Male,0.0,Most Opposite
+Avery Wilson,11,Male,50.0,Most Opposite
+Alex Williams,10,Female,50.0,Most Opposite
