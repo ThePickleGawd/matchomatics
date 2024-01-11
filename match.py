@@ -93,19 +93,19 @@ if not os.path.exists(output_dir):
 for person, person_matches in matches.items():
     # Create DataFrames for each category of matches
     same_grade_df = pd.DataFrame(
-        person_matches["Same Grade"], columns=["Name", "Grade", "Percent", "Gender"]
+        person_matches["Same Grade"], columns=["Name", "Grade", "Gender", "Percent"]
     ).assign(Category="Same Grade")
 
     different_grade_df = pd.DataFrame(
-        person_matches["Different Grade"], columns=["Name", "Grade", "Percent", "Gender"]
+        person_matches["Different Grade"], columns=["Name", "Grade", "Gender", "Percent"]
     ).assign(Category="Different Grade")
 
     same_gender_df = pd.DataFrame(
-        person_matches["Same Gender"], columns=["Name", "Grade", "Percent", "Gender"]
+        person_matches["Same Gender"], columns=["Name", "Grade", "Gender", "Percent"]
     ).assign(Category="Same Gender")
 
     most_opposite_df = pd.DataFrame(
-        person_matches["Most Opposite"], columns=["Name", "Grade", "Percent", "Gender"]
+        person_matches["Most Opposite"], columns=["Name", "Grade", "Gender", "Percent"]
     ).assign(Category="Most Opposite")
 
     # Combine all categories into a single DataFrame

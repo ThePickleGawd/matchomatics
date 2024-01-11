@@ -1,6 +1,10 @@
 import pandas as pd
 from jinja2 import Environment, FileSystemLoader
 
+# TODO
+# Create file and add html headers
+# Open all csv, run render and insert
+# Add closing html
 
 def csv_to_html(csv_file, template_file, output_html):
     # Read data from CSV
