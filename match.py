@@ -25,18 +25,16 @@ def calculate_match_score(row1, row2, compare_columns):
     # Score dependent questions
     for preference, attribute in dependent_questions:
         max_score += dependent_match_points  # Update max score for each dependent question
-        if row1[preference] == row2[attribute]:
+        if row1[preference][0] == row2[attribute][0]:
             score += dependent_match_points  # Match between preference and attribute
 
     # Calculate basic percent match
     percent_match = (score / max_score) if max_score > 0 else 0
+    if percent_match < 0.15:
+        return round(random.uniform(1.8, 15), 1)
 
-    # Adjust the match percent to scale it within the desired range
-    if percent_match < 0.30:
-        return round(random.uniform(20.0, 30.0), 1)
-    
     # Scaled match percent for top matches
-    scaled_percent = 0.9 + 0.09 * (percent_match ** 0.5)
+    scaled_percent = 0.1 + (percent_match ** 0.5)
     return min(round(scaled_percent * 100, 1), 99.8)
 
 

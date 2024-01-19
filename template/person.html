@@ -1,22 +1,22 @@
-<div class="container mx-auto p-4 bg-gray-100 pagebreak">
+<div class="container mx-auto p-4 pagebreak">
   <div
-    class="flex justify-center items-center flex-col bg-red-200 text-red-600 p-4"
+    class="flex justify-center items-center flex-col bg-red-300 text-red-600 p-4 rounded-lg mb-2"
   >
     <h1 class="text-2xl">Gunn Matchomatics!</h1>
     <h1 class="text-5xl font-bold">{{Name}}</h1>
   </div>
   <div class="grid grid-cols-2 gap-x-2 text-sm">
     <div>
-      <div class="text-center text-lg font-bold py-2">Same Grade</div>
-      <table class="w-full bg-gray-200">
+      <div class="text-center text-md py-2">Same Grade</div>
+      <table class=" w-full bg-gray-200">
         <tr class="space-x-2">
           <th class="text-left">Name</th>
           <th class="text-center">Grade</th>
           <th class="text-center">Match</th>
         </tr>
         {% for match in matches %} {% if match.Category == "Different Gender Same Grade"%}
-        <tr class="bg-white p-4 rounded-lg shadow mb-4">
-          <td class="text-left">{{ match.Name }}</td>
+        <tr class="bg-white ">
+          <td class="text-left w-48">{{ match.Name }}</td>
           <td class="text-center">{{ match.Grade }}</td>
           <td class="text-center">{{ match.Percent }}%</td>
         </tr>
@@ -24,18 +24,16 @@
       </table>
     </div>
     <div>
-      <div class="text-center text-lg font-bold py-2">
-        Same Grade
-      </div>
-      <table class="w-full bg-gray-200">
+      <div class="text-center text-md py-2"> Same Grade </div>
+      <table class=" w-full bg-gray-200">
         <tr class="space-x-2">
           <th class="text-left">Name</th>
           <th class="text-center">Grade</th>
           <th class="text-center">Match</th>
         </tr>
         {% for match in matches %} {% if match.Category == "Same Gender Same Grade"%}
-        <tr class="bg-white p-4 rounded-lg shadow mb-4">
-          <td class="text-left">{{ match.Name }}</td>
+        <tr class="bg-white  ">
+          <td class="text-left w-48">{{ match.Name }}</td>
           <td class="text-center">{{ match.Grade }}</td>
           <td class="text-center">{{ match.Percent }}%</td>
         </tr>
@@ -43,16 +41,16 @@
       </table>
     </div>
     <div>
-      <div class="text-center text-lg font-bold py-2">Different Grade</div>
-      <table class="w-full bg-gray-200">
+      <div class="text-center text-md  py-2">Different Grade</div>
+      <table class=" w-full bg-gray-200">
         <tr class="space-x-2">
           <th class="text-left">Name</th>
           <th class="text-center">Grade</th>
           <th class="text-center">Match</th>
         </tr>
         {% for match in matches %} {% if match.Category == "Different Gender Different Grade"%}
-        <tr class="bg-white p-4 rounded-lg shadow mb-4">
-          <td class="text-left">{{ match.Name }}</td>
+        <tr class="bg-white  ">
+          <td class="text-left w-48">{{ match.Name }}</td>
           <td class="text-center">{{ match.Grade }}</td>
           <td class="text-center">{{ match.Percent }}%</td>
         </tr>
@@ -60,16 +58,16 @@
       </table>
     </div>
     <div>
-      <div class="text-center text-lg font-bold py-2">Different Grade</div>
-      <table class="w-full bg-gray-200">
+      <div class="text-center text-md  py-2">Different Grade</div>
+      <table class=" w-full bg-gray-200">
         <tr class="space-x-2">
           <th class="text-left">Name</th>
           <th class="text-center">Grade</th>
           <th class="text-center">Match</th>
         </tr>
         {% for match in matches %} {% if match.Category == "Same Gender Different Grade"%}
-        <tr class="bg-white p-4 rounded-lg shadow mb-4">
-          <td class="text-left">{{ match.Name }}</td>
+        <tr class="bg-white  ">
+          <td class="text-left w-48">{{ match.Name }}</td>
           <td class="text-center">{{ match.Grade }}</td>
           <td class="text-center">{{ match.Percent }}%</td>
         </tr>
@@ -77,16 +75,16 @@
       </table>
     </div>
     <div>
-      <div class="text-center text-lg font-bold py-2">Most Opposite</div>
-      <table class="w-full bg-gray-200">
+      <div class="text-center text-md  py-2">Most Opposite</div>
+      <table class=" w-full bg-gray-200">
         <tr class="space-x-2">
           <th class="text-left">Name</th>
           <th class="text-center">Grade</th>
           <th class="text-center">Match</th>
         </tr>
         {% for match in matches %} {% if match.Category == "Most Opposite Different Gender"%}
-        <tr class="bg-white p-4 rounded-lg shadow mb-4">
-          <td class="text-left">{{ match.Name }}</td>
+        <tr class="bg-white  ">
+          <td class="text-left w-48">{{ match.Name }}</td>
           <td class="text-center">{{ match.Grade }}</td>
           <td class="text-center">{{ match.Percent }}%</td>
         </tr>
@@ -94,16 +92,16 @@
       </table>
     </div>
     <div>
-      <div class="text-center text-lg font-bold py-2">Most Opposite</div>
-      <table class="w-full bg-gray-200">
+      <div class="text-center text-md  py-2">Most Opposite</div>
+      <table class=" w-full bg-gray-200">
         <tr class="space-x-2">
           <th class="text-left">Name</th>
           <th class="text-center">Grade</th>
           <th class="text-center">Match</th>
         </tr>
         {% for match in matches %} {% if match.Category == "Most Opposite Same Gender"%}
-        <tr class="bg-white p-4 rounded-lg shadow mb-4">
-          <td class="text-left">{{ match.Name }}</td>
+        <tr class="bg-white  ">
+          <td class="text-left w-48">{{ match.Name }}</td>
           <td class="text-center">{{ match.Grade }}</td>
           <td class="text-center">{{ match.Percent }}%</td>
         </tr>
@@ -114,6 +112,6 @@
   <div
     class="text-sm text-gray-800 flex items-center justify-center w-full flex-col mt-4"
   >
-    <div>Enhanced by Dylan Lu's magical love-matching algorithm</div>
+    <div>Powered by Dylan Lu's magical matchmaking algorithm</div>
   </div>
 </div>
