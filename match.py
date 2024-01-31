@@ -45,7 +45,7 @@ matches = {}
 sample_data = pd.read_csv("data.csv")
 
 # Columns to exclude
-exclude_columns = ['Name', 'Timestamp', 'Gender', 'Grade', "Username"]
+exclude_columns = ['Name', 'Timestamp', 'Gender', 'Grade', "Username", "ID number"]
 
 # Dependent columns
 dependent_questions = [
@@ -60,6 +60,10 @@ compare_columns = [col for col in sample_data.columns if col not in exclude_colu
 # Iterate through each person in the data
 for index, person in sample_data.iterrows():
     all_matches = []
+    
+    # I'm really lazy but yeah
+    if(person['Gender'] != "Male" and person["Gender"] != "Female"):
+        person['Gender'] = "Female"
 
     # Iterate through all other people for comparison
     for compare_index, compare_person in sample_data.iterrows():
