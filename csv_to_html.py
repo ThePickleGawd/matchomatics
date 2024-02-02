@@ -8,6 +8,12 @@ def csv_to_html(csv_file, template_file, output_html):
     # Group data by 'Person' and prepare it for rendering
     all_persons = {person: group.to_dict('records') for person, group in data.groupby('Person')}
 
+    # Get the grade
+    for person in all_persons:
+        if all_persons[person][0]["Category"] != "Same Gender Same Grade":
+            print("Fatal: First item in array is not the same grade, so we'll get incorrect grade")
+            return
+
     # Set up Jinja2 environment and render the template
     env = Environment(loader=FileSystemLoader("."))
     template = env.get_template(template_file)

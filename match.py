@@ -61,7 +61,7 @@ compare_columns = [col for col in sample_data.columns if col not in exclude_colu
 for index, person in sample_data.iterrows():
     all_matches = []
     
-    # I'm really lazy but yeah
+    # Politically incorrect but necessary
     if(person['Gender'] != "Male" and person["Gender"] != "Female"):
         person['Gender'] = "Female"
 

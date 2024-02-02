@@ -16,11 +16,21 @@
           -webkit-print-color-adjust: exact;
         }
       }
+
+      @font-face {
+        font-family: headerFont;
+        src: url('DancingScript.ttf');
+      }
+
+      .prettyFont {
+        font-family: headerFont;
+      }
     </style>
   </head>
   <body>
     {% for person_name, matches in all_persons.items() %} 
-        {% set Name = person_name %} 
+        {% set Name = person_name %}
+        {% set Grade = matches[0]["Grade"] %}
         {% include 'template/person.html' %} 
     {% endfor %}
   </body>
