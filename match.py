@@ -120,36 +120,3 @@ for person, person_matches in matches.items():
 # Export the combined DataFrame to a single CSV file
 output_csv_path = os.path.join(output_dir, 'all_matches.csv')
 all_matches_df.to_csv(output_csv_path, index=False)
-
-# # Ensure the output directory exists
-# if not os.path.exists(output_dir):
-#     os.makedirs(output_dir)
-
-# # Iterate over the matches dictionary to create and save CSV files
-# for person, person_matches in matches.items():
-#     # Create DataFrames for each category of matches
-#     same_grade_df = pd.DataFrame(
-#         person_matches["Same Grade"], columns=["Name", "Grade", "Gender", "Percent"]
-#     ).assign(Category="Same Grade")
-
-#     different_grade_df = pd.DataFrame(
-#         person_matches["Different Grade"], columns=["Name", "Grade", "Gender", "Percent"]
-#     ).assign(Category="Different Grade")
-
-#     same_gender_df = pd.DataFrame(
-#         person_matches["Same Gender"], columns=["Name", "Grade", "Gender", "Percent"]
-#     ).assign(Category="Same Gender")
-
-#     most_opposite_df = pd.DataFrame(
-#         person_matches["Most Opposite"], columns=["Name", "Grade", "Gender", "Percent"]
-#     ).assign(Category="Most Opposite")
-
-#     # Combine all categories into a single DataFrame
-#     combined_df = pd.concat(
-#         [same_grade_df, different_grade_df, same_gender_df, most_opposite_df]
-#     )
-
-#     # Save to CSV in the output directory
-#     match_csv_path = os.path.join(output_dir, f'match_{person.replace(" ", "_")}.csv')
-#     combined_df.to_csv(match_csv_path, index=False)
-#     output_files.append(match_csv_path)
