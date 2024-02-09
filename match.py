@@ -45,7 +45,7 @@ matches = {}
 sample_data = pd.read_csv("data.csv")
 
 # Columns to exclude
-exclude_columns = ['Name', 'Timestamp', 'Gender', 'Grade', "Username", "ID number"]
+exclude_columns = ['Name', 'Timestamp', 'Gender', 'Grade', "Username", "ID number", "Email Address"]
 
 # Dependent columns
 dependent_questions = [
